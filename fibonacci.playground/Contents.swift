@@ -35,9 +35,12 @@ func fibMemoized(num: Int) -> Int {
     memo[num] = fibMemoized(num: num - 1) + fibMemoized(num: num - 2)
     return memo[num]!
 }
-
+memo = [:]
 print(fibMemoized(num: 6))
+memo = [:]
 print(fibMemoized(num: 7))
+memo = [:]
 print(fibMemoized(num: 8))
+memo = [:]
 print(fibMemoized(num: 50))
 
