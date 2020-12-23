@@ -52,9 +52,13 @@ func canSumMemoized(targetSum: Int, numbers: [Int]) -> Bool {
     memo[targetSum] = false
     return false
 }
-
+memo = [:]
 print(canSumMemoized(targetSum: 7, numbers: [1,2]))
+memo = [:]
 print(canSumMemoized(targetSum: 7, numbers: [5,3,4,7]))
+memo = [:]
 print(canSumMemoized(targetSum: 7, numbers: [2,4]))
+memo = [:]
 print(canSumMemoized(targetSum: 8, numbers: [2,3,5]))
+memo = [:]
 print(canSumMemoized(targetSum: 300, numbers: [14,7]))
