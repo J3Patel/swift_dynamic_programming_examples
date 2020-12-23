@@ -36,7 +36,7 @@ print(canConstruct(target: "stateboard", wordBank: ["bo","rd","ate", "t","ska","
 /**
  m = targetSum
  n = array numbers length
- - Complexity: O(m*n)
+ - Complexity: O(m*n) // not multiplying by m because subscripting in swift => target[] will takr O(1) time
  Space Complexity: O(m^2)
  */
 var memo: [String:Bool] = [:]
