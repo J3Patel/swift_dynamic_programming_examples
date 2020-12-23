@@ -46,10 +46,14 @@ func gridTravelerMemoized(n: Int, m: Int) -> Int{
     memo["\(m),\(n)"] = v // can remove this
     return v
 }
-
+memo = [:]
 print(gridTravelerMemoized(n: 1, m: 1))
+memo = [:]
 print(gridTravelerMemoized(n: 2, m: 3))
+memo = [:]
 print(gridTravelerMemoized(n: 3, m: 2))
+memo = [:]
 print(gridTravelerMemoized(n: 3, m: 3))
+memo = [:]
 print(gridTravelerMemoized(n: 18, m: 18))
 
